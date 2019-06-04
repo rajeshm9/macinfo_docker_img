@@ -1,0 +1,8 @@
+#!/bin/bash
+#at_kRvDpo1wN8G2TWWXo5n0j0P16wlL1
+if [ -z $API_KEY ]
+then
+    echo "Usage: docker run -e API_KEY=<api_key> <imagename> <mac_address>"
+    exit 1
+fi
+python app.py $1 $API_KEY
