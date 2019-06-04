@@ -2,7 +2,7 @@
 Get Mac info from https://macaddress.io api request
 
 # app.py
-This code uses urllib python library to call macaddress.ip restfull api.
+Python code  uses urllib python library to call macaddress.ip rest-full api.
 
 # Building image.
 Image build specification is written in Dockerfile and have entrypoint script called macaddr.
@@ -22,7 +22,7 @@ Following command is used to build the image
 
 # Running Image.
 
-Following command is used to run the . API_KEY can be obtained by signing up at macaddress.io website.
+Following command is used to run the docker image. API_KEY can be obtained by signing up at macaddress.io website and we need to pass mac address for which we want information.
 
 **docker run -e API_KEY=xxxxxxxxx macinfo 44:38:39:ff:ef:57**
 MAC_ADDRESS=44:38:39:ff:ef:57,COMPANY_NAME=Cumulus Networks, Inc
